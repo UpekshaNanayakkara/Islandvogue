@@ -1,0 +1,154 @@
+/* Existing Styles */
+.newarrived-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+  
+  .newarrived-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .newarrived-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+    gap: 20px; /* Reduced gap for better mobile display */
+  }
+  
+  .newarrived-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .newarrived-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .newarrived-img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    max-height: 400px; /* Restrict the max height */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .newarrived-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .newarrived-name {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .newarrived-id, .newarrived-size, .newarrived-price {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .newarrived-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .newarrived-title {
+      font-size: 32px;
+    }
+  
+    .newarrived-grid {
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .newarrived-container {
+      width: 90%;
+    }
+  
+    .newarrived-title {
+      font-size: 28px;
+    }
+  
+    .newarrived-img {
+      max-height: 350px; /* Smaller height for tablets */
+    }
+  
+    .newarrived-info {
+      padding: 8px;
+    }
+  
+    .newarrived-name {
+      font-size: 20px;
+    }
+  
+    .newarrived-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .newarrived-container {
+      width: 95%;
+    }
+  
+    .newarrived-title {
+      font-size: 24px;
+    }
+  
+    .newarrived-img {
+      max-height: 300px;
+    }
+  
+    .newarrived-name {
+      font-size: 18px;
+    }
+  
+    .newarrived-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .newarrived-title {
+      font-size: 22px;
+    }
+  
+    .newarrived-grid {
+      gap: 10px;
+    }
+  
+    .newarrived-card {
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .newarrived-img {
+      max-height: 250px;
+    }
+  
+    .newarrived-info {
+      padding: 5px;
+    }
+  
+    .newarrived-name {
+      font-size: 16px;
+    }
+  
+    .newarrived-price {
+      font-size: 14px;
+    }
+  }
+  

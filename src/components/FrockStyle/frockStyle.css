@@ -1,0 +1,154 @@
+/* Existing Styles */
+.frockstyle-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+  
+  .frockstyle-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .frockstyle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+    gap: 20px; /* Reduced gap for better mobile display */
+  }
+  
+  .frockstyle-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .frockstyle-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .frockstyle-img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    max-height: 400px; /* Restrict the max height */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .frockstyle-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .frockstyle-name {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .frockstyle-id, .frockstyle-size, .frockstyle-price {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .frockstyle-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .frockstyle-title {
+      font-size: 32px;
+    }
+  
+    .frockstyle-grid {
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .frockstyle-container {
+      width: 90%;
+    }
+  
+    .frockstyle-title {
+      font-size: 28px;
+    }
+  
+    .frockstyle-img {
+      max-height: 350px; /* Smaller height for tablets */
+    }
+  
+    .frockstyle-info {
+      padding: 8px;
+    }
+  
+    .frockstyle-name {
+      font-size: 20px;
+    }
+  
+    .frockstyle-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .frockstyle-container {
+      width: 95%;
+    }
+  
+    .frockstyle-title {
+      font-size: 24px;
+    }
+  
+    .frockstyle-img {
+      max-height: 300px;
+    }
+  
+    .frockstyle-name {
+      font-size: 18px;
+    }
+  
+    .frockstyle-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .frockstyle-title {
+      font-size: 22px;
+    }
+  
+    .frockstyle-grid {
+      gap: 10px;
+    }
+  
+    .frockstyle-card {
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .frockstyle-img {
+      max-height: 250px;
+    }
+  
+    .frockstyle-info {
+      padding: 5px;
+    }
+  
+    .frockstyle-name {
+      font-size: 16px;
+    }
+  
+    .frockstyle-price {
+      font-size: 14px;
+    }
+  }
+  

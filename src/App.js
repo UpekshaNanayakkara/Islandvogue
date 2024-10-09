@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { Helmet } from 'react-helmet';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import TopBar from './components/TopBar';
+import NavBar from './components/NavBar/NavBar';
+import Home from './pages/Home';
+import BannerSection from './components/BannerSection/BannerSection';
+import Footer from './components/Footer/footer';
+import PartyWear from './components/PartyWear/partyWear';
+import FrockStyle from './components/FrockStyle/frockStyle';
+import NewArrived from './components/NewArrived/newArrived';
+import NewArrivedSlider from './components/NewArrivedSlider/newArrivedSlider';
+import AboutUs from './components/AboutUs/aboutus';
+import TermsAndCondition from './components/TermsAndCondition/termsAndCondition';
+import ExchangePolicy from './components/ExchangePolicy/exchangePolicy';
+import DeliveryPolicy from './components/DeliveryPolicy/deliveryPolicy';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <TopBar />
+        <NavBar/>
+        {/* <Helmet>
+        <title>Island Vogue</title>
+        <meta name="description" content="Ethnic & Modest wear sore" />
+        <meta name="keywords" content="island, island-vogue, vogue, ethnic-wear, modest-wear, wear-sore " />
+      </Helmet> */}
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="/bannerSection" element={<BannerSection />} />
+          <Route path="/newarrivedslider" element={<NewArrivedSlider/>} />  
+          <Route path="/partywear" element={<PartyWear/>} />
+          <Route path="/frockstyle" element={<FrockStyle />} />
+          <Route path="/newarrived" element={<NewArrived />} />
+          <Route path="/aboutus" element = {<AboutUs />} />
+          <Route path="/terms" element = {<TermsAndCondition />} />
+          <Route path="/exchange" element = {<ExchangePolicy />} />
+          <Route path="/delivery" element = {<DeliveryPolicy />} />
+        </Routes>
+      </Router>
+      <Footer/>
     </div>
   );
 }

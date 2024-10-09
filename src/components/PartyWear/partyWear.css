@@ -1,0 +1,153 @@
+/* Existing Styles */
+.partywear-container {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.partywear-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.partywear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+  gap: 20px; /* Reduced gap for better mobile display */
+}
+
+.partywear-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.partywear-card:hover {
+  transform: scale(1.05);
+}
+
+.partywear-img {
+  width: 100%;
+  height: auto; /* Adjust height automatically */
+  max-height: 400px; /* Restrict the max height */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.partywear-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.partywear-name {
+  font-size: 22px;
+  color: #333;
+}
+
+.partywear-id, .partywear-size, .partywear-price {
+  color: #777;
+  font-size: 16px;
+}
+
+.partywear-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF6347;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .partywear-title {
+    font-size: 32px;
+  }
+
+  .partywear-grid {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partywear-container {
+    width: 90%;
+  }
+
+  .partywear-title {
+    font-size: 28px;
+  }
+
+  .partywear-img {
+    max-height: 350px; /* Smaller height for tablets */
+  }
+
+  .partywear-info {
+    padding: 8px;
+  }
+
+  .partywear-name {
+    font-size: 20px;
+  }
+
+  .partywear-price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partywear-container {
+    width: 95%;
+  }
+
+  .partywear-title {
+    font-size: 24px;
+  }
+
+  .partywear-img {
+    max-height: 300px;
+  }
+
+  .partywear-name {
+    font-size: 18px;
+  }
+
+  .partywear-price {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .partywear-title {
+    font-size: 22px;
+  }
+
+  .partywear-grid {
+    gap: 10px;
+  }
+
+  .partywear-card {
+    margin: 0 auto; /* Center cards */
+  }
+
+  .partywear-img {
+    max-height: 250px;
+  }
+
+  .partywear-info {
+    padding: 5px;
+  }
+
+  .partywear-name {
+    font-size: 16px;
+  }
+
+  .partywear-price {
+    font-size: 14px;
+  }
+}

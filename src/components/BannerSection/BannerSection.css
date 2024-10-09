@@ -1,0 +1,112 @@
+.banner-container {
+  background-size: 100% 70vh;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 0 20px;
+}
+
+.banner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.banner-content {
+  position: relative;
+  text-align: left; /* Optional: align text to the left */
+  padding-left: 200px; /* Adjust padding to move content more centrally on the right side */
+}
+
+.banner-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  color: antiquewhite;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn {
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 500px;
+  background-color: #f5b042;
+  color: #0d2741;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px; 
+}
+
+.shop-now-btn:hover {
+  background-color: #c8851a; /* Darker hover color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .banner-container {
+    background-size: 100% 40vh;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+  }
+
+  .banner-content {
+    position: relative;
+    text-align: left; /* Optional: align text to the left */
+    padding-left: 80px; /* Adjust padding to move content more centrally on the right side */
+  }
+
+  .banner-content h1 {
+    font-size: 32px; /* Reduce font size */
+  }
+
+  .banner-content p {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    background-size: 100% 35vh;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+  }
+
+  .banner-content {
+    position: relative;
+    text-align: left; /* Optional: align text to the left */
+    padding-left: 20px; /* Adjust padding to move content more centrally on the right side */
+  }
+
+  .banner-content h1 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .banner-content p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .shop-now-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,77 @@
+/* About Us Section Styles */
+.about-us-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: center;
+    /* background-color: #f9f9f9; */
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    color: #0d2a47;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #0d2741;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .about-text {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .about-us-container {
+      padding: 1.5rem;
+    }
+  
+    .about-title {
+      font-size: 2.4rem;
+    }
+  
+    .about-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container {
+      padding: 1rem;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-container {
+      padding: 0.8rem;
+    }
+  
+    .about-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-text {
+      font-size: 0.95rem;
+    }
+  }
+  
