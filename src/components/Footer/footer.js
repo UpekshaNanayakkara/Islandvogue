@@ -53,7 +53,7 @@ const footer = () => {
                             <table>
                                 <tr>
                                     <td><FaPhone /></td>
-                                    <td>(+94) 700 000 000</td>
+                                    <td>(+94) 727 772 459</td>
                                 </tr>
                                 <tr>
                                     <td><FaPhone /></td>

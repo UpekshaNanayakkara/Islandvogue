@@ -27,7 +27,7 @@ const TopBar = () => {
         <a href="https://www.tiktok.com/@islandvogue.sl?_t=8pUgoBqwHTk&_r=1" target="_blank" rel="noopener noreferrer">
           <FaTiktok />
         </a>
-        <button className="contact-us">Contact Us</button>
+        <button className="contact-us"><a href="http://wa.me/94727772459" target="_blank" rel="noopener noreferrer">Contact Us</a></button>
       </div>
     </div>
   );
