@@ -52,7 +52,12 @@ const NavBar = () => {
           <Link to="">Straight cut</Link>
         </li>
         <li className="nav-item">
-          <Link to="/frockstyle">Frocks style</Link>
+        <span className="nav-link" onClick={toggleSubMenu}>Kurtis</span>
+          <ul className={`sub-menu ${subMenuOpen ? 'active' : ''}`}>
+            <li className="sub-item"><Link to="">FrockStyle</Link></li>
+            <li className="sub-item"><Link to="">Princessline</Link></li>
+            <li className="sub-item"><Link to="">Straight cut tops</Link></li>
+          </ul>
         </li>
         <li className="nav-item">
           <Link to="/cardigan">Cardigans & jackets</Link>
