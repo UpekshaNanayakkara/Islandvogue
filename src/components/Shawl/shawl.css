@@ -1,0 +1,199 @@
+/* Existing Styles */
+.shawl-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+
+  .shawl-img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+  
+  .shawl-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .shawl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+    gap: 20px; /* Reduced gap for better mobile display */
+  }
+  
+  .shawl-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Ensure all cards are same width */
+    height: 450px; /* Fixed height to make all cards uniform */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .shawl-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .shawl-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+  
+  .shawl-info {
+    padding: 2px;
+    text-align: center;
+  }
+
+.shawl-name,
+.shawl-id,
+.shawl-size,
+.shawl-price {
+  margin: 4px 0; /* Adjusted margin to reduce spacing between text */
+}
+  
+  .shawl-name {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .shawl-id, .shawl-size, .shawl-price {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .shawl-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .shawl-title {
+      font-size: 32px;
+    }
+  
+    .shawl-grid {
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .shawl-container {
+      width: 90%;
+    }
+  
+    .shawl-title {
+      font-size: 28px;
+    }
+  
+    .shawl-img {
+      max-height: 350px; /* Smaller height for tablets */
+    }
+  
+    .shawl-info {
+      padding: 8px;
+    }
+  
+    .shawl-name {
+      font-size: 20px;
+    }
+  
+    .shawl-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .shawl-container {
+      width: 95%;
+    }
+  
+    .shawl-title {
+      font-size: 24px;
+    }
+  
+    .shawl-img {
+      max-height: 300px;
+    }
+  
+    .shawl-name {
+      font-size: 18px;
+    }
+  
+    .shawl-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .shawl-title {
+      font-size: 22px;
+    }
+  
+    .shawl-grid {
+      gap: 10px;
+    }
+  
+    .shawl-card {
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .shawl-img {
+      max-height: 250px;
+    }
+  
+    .shawl-info {
+      padding: 5px;
+    }
+  
+    .shawl-name {
+      font-size: 16px;
+    }
+  
+    .shawl-price {
+      font-size: 14px;
+    }
+  }
+  

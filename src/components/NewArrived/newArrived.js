@@ -5,7 +5,7 @@ import './newArrived.css';
 const newArrived = () => {
     return (
         <div className="newarrived-container">
-          <h1 className="newarrived-title">New Arrived Collection</h1>
+          <h1 className="newarrived-title">Our Collection</h1>
           <div className="newarrived-grid">
             {NewArrivedData.map((item) => (
               <div className="newarrived-card" key={item.id}>

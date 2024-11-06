@@ -35,7 +35,7 @@ const NewArrivedSlider = () => {
 
     return (
         <div className="new-arrived-slider">
-            <div className='topic'><h1>--- New Arrived Styles ---</h1></div>
+            <div className='topic'><h1>--- Latest in Store ---</h1></div>
             <Slider {...settings}>
                 {NewArrivedData.map((item, index) => (
                     <div key={index} className="slide-item">

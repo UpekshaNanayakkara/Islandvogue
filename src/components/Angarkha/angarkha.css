@@ -1,0 +1,161 @@
+/* Existing Styles */
+.angarkha-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+  
+  .angarkha-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .angarkha-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+    gap: 20px; /* Reduced gap for better mobile display */
+  }
+  
+  .angarkha-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .angarkha-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .angarkha-img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    max-height: 400px; /* Restrict the max height */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .angarkha-info {
+    padding: 2px;
+    text-align: center;
+  }
+
+.angarkha-name,
+.angarkha-id,
+.angarkha-size,
+.angarkha-price {
+  margin: 4px 0; /* Adjusted margin to reduce spacing between text */
+}
+  
+  .angarkha-name {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .angarkha-id, .angarkha-size, .angarkha-price {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .angarkha-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .angarkha-title {
+      font-size: 32px;
+    }
+  
+    .angarkha-grid {
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .angarkha-container {
+      width: 90%;
+    }
+  
+    .angarkha-title {
+      font-size: 28px;
+    }
+  
+    .angarkha-img {
+      max-height: 350px; /* Smaller height for tablets */
+    }
+  
+    .angarkha-info {
+      padding: 8px;
+    }
+  
+    .angarkha-name {
+      font-size: 20px;
+    }
+  
+    .angarkha-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .angarkha-container {
+      width: 95%;
+    }
+  
+    .angarkha-title {
+      font-size: 24px;
+    }
+  
+    .angarkha-img {
+      max-height: 300px;
+    }
+  
+    .angarkha-name {
+      font-size: 18px;
+    }
+  
+    .angarkha-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .angarkha-title {
+      font-size: 22px;
+    }
+  
+    .angarkha-grid {
+      gap: 10px;
+    }
+  
+    .angarkha-card {
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .angarkha-img {
+      max-height: 250px;
+    }
+  
+    .angarkha-info {
+      padding: 5px;
+    }
+  
+    .angarkha-name {
+      font-size: 16px;
+    }
+  
+    .angarkha-price {
+      font-size: 14px;
+    }
+  }
+  
