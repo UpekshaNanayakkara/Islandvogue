@@ -4,16 +4,19 @@ import './NavBar.css';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [subMenuOpen, setSubMenuOpen] = useState({ tops: false, kurtis: false });
 
   // Toggle the mobile menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Toggle the submenu for Tops
-  const toggleSubMenu = () => {
-    setSubMenuOpen(!subMenuOpen);
+  // Toggle submenus individually
+  const toggleSubMenu = (menu) => {
+    setSubMenuOpen((prev) => ({
+      ...prev,
+      [menu]: !prev[menu],
+    }));
   };
 
   return (
@@ -36,11 +39,13 @@ const NavBar = () => {
         <li className="nav-item">
           <Link to="/angarkha">Angarkha</Link>
         </li>
-        
+
         {/* Tops Category with Click-to-Open Submenu */}
         <li className="nav-item">
-          <span className="nav-link" onClick={toggleSubMenu}>Tops</span>
-          <ul className={`sub-menu ${subMenuOpen ? 'active' : ''}`}>
+          <span className="nav-link" onClick={() => toggleSubMenu('tops')}>
+            Tops ▼
+          </span>
+          <ul className={`sub-menu ${subMenuOpen.tops ? 'active' : ''}`}>
             <li className="sub-item"><Link to="">Kaftan Style Tops</Link></li>
             <li className="sub-item"><Link to="">Ponchos</Link></li>
             <li className="sub-item"><Link to="">Shirt Style</Link></li>
@@ -51,14 +56,19 @@ const NavBar = () => {
         <li className="nav-item">
           <Link to="">Straight cut</Link>
         </li>
+
+        {/* Kurtis Category with Click-to-Open Submenu */}
         <li className="nav-item">
-        <span className="nav-link" onClick={toggleSubMenu}>Kurtis</span>
-          <ul className={`sub-menu ${subMenuOpen ? 'active' : ''}`}>
+          <span className="nav-link" onClick={() => toggleSubMenu('kurtis')}>
+            Kurtis ▼
+          </span>
+          <ul className={`sub-menu ${subMenuOpen.kurtis ? 'active' : ''}`}>
             <li className="sub-item"><Link to="">FrockStyle</Link></li>
             <li className="sub-item"><Link to="">Princessline</Link></li>
             <li className="sub-item"><Link to="">Straight cut tops</Link></li>
           </ul>
         </li>
+        
         <li className="nav-item">
           <Link to="/cardigan">Cardigans & jackets</Link>
         </li>

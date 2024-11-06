@@ -60,20 +60,54 @@
   display: block;
 }
 
-.sub-item {
-  margin: 5px 0;
+.nav-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.sub-item a {
-  color: #f9f8f8;
-  font-size: 14px;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.nav-link::after {
+  content: " ▼";
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s;
 }
 
-.sub-item a:hover {
-  color: #f5a623;
+.nav-link:hover::after {
+  transform: rotate(180deg);
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sub-menu {
+    position: relative;
+    padding-left: 20px;
+    display: none; /* Ensure submenu is hidden by default */
+  }
+
+  .sub-menu.active {
+    display: block;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   /* Submenu on mobile */
