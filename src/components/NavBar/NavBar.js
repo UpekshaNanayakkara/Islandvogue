@@ -53,9 +53,9 @@ const NavBar = () => {
           </ul>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link to="">Straight cut</Link>
-        </li>
+        </li> */}
 
         {/* Kurtis Category with Click-to-Open Submenu */}
         <li className="nav-item">
