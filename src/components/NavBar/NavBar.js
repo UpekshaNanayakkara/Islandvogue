@@ -43,7 +43,7 @@ const NavBar = () => {
         {/* Tops Category with Click-to-Open Submenu */}
         <li className="nav-item">
           <span className="nav-link" onClick={() => toggleSubMenu('tops')}>
-            Tops ▼
+            Tops 
           </span>
           <ul className={`sub-menu ${subMenuOpen.tops ? 'active' : ''}`}>
             <li className="sub-item"><Link to="">Kaftan Style Tops</Link></li>
@@ -60,7 +60,7 @@ const NavBar = () => {
         {/* Kurtis Category with Click-to-Open Submenu */}
         <li className="nav-item">
           <span className="nav-link" onClick={() => toggleSubMenu('kurtis')}>
-            Kurtis ▼
+            Kurtis 
           </span>
           <ul className={`sub-menu ${subMenuOpen.kurtis ? 'active' : ''}`}>
             <li className="sub-item"><Link to="">FrockStyle</Link></li>
