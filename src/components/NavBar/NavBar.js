@@ -43,43 +43,39 @@ const NavBar = () => {
         {/* Tops Category with Click-to-Open Submenu */}
         <li className="nav-item">
           <span className="nav-link" onClick={() => toggleSubMenu('tops')}>
-            Tops 
+            Tops
           </span>
           <ul className={`sub-menu ${subMenuOpen.tops ? 'active' : ''}`}>
-            <li className="sub-item"><Link to="">Kaftan Style Tops</Link></li>
-            <li className="sub-item"><Link to="">Ponchos</Link></li>
-            <li className="sub-item"><Link to="">Shirt Style</Link></li>
-            <li className="sub-item"><Link to="">Short Tops</Link></li>
+            <li className="sub-item"><Link to="/kaftan">Kaftan Style Tops</Link></li>
+            <li className="sub-item"><Link to="/ponchos">Ponchos</Link></li>
+            <li className="sub-item"><Link to="/shirtstyle">Shirt Style</Link></li>
+            <li className="sub-item"><Link to="/shorttops">Short Tops</Link></li>
           </ul>
         </li>
-
-        {/* <li className="nav-item">
-          <Link to="">Straight cut</Link>
-        </li> */}
 
         {/* Kurtis Category with Click-to-Open Submenu */}
         <li className="nav-item">
           <span className="nav-link" onClick={() => toggleSubMenu('kurtis')}>
-            Kurtis 
+            Kurtis
           </span>
           <ul className={`sub-menu ${subMenuOpen.kurtis ? 'active' : ''}`}>
-            <li className="sub-item"><Link to="">FrockStyle</Link></li>
-            <li className="sub-item"><Link to="">Princessline</Link></li>
-            <li className="sub-item"><Link to="">Straight cut tops</Link></li>
+            <li className="sub-item"><Link to="/frockstyle">Frock Style</Link></li>
+            <li className="sub-item"><Link to="/princessline">Princess Line</Link></li>
+            <li className="sub-item"><Link to="/staightcutTops">Straight Cut Tops</Link></li>
           </ul>
         </li>
-        
+
         <li className="nav-item">
-          <Link to="/cardigan">Cardigans & jackets</Link>
+          <Link to="/cardigan">Cardigans & Jackets</Link>
         </li>
         <li className="nav-item">
           <Link to="/shawl">Shawls</Link>
         </li>
         <li className="nav-item">
-          <Link to="">Pants & leggings</Link>
+          <Link to="/pants">Pants & Leggings</Link>
         </li>
         <li className="nav-item">
-          <Link to="">Accessories & gift cards</Link>
+          <Link to="/accessories">Accessories & Gift Cards</Link>
         </li>
       </ul>
     </div>

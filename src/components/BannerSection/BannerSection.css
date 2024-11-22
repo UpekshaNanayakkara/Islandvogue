@@ -42,8 +42,8 @@
   padding: 12px 25px;
   font-size: 20px;
   font-weight: 500px;
-  background-color: #f5b042;
-  color: #0d2741;
+  background-color: #63898C;
+  color: #015366;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -51,7 +51,7 @@
 }
 
 .shop-now-btn:hover {
-  background-color: #c8851a; /* Darker hover color */
+  background-color: #63898C; /* Darker hover color */
 }
 
 /* Responsive styles */

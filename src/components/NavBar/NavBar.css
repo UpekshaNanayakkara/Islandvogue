@@ -1,203 +1,146 @@
+/* General Navigation Styling */
 .nav-container {
-  background-color: #0d2741;
+  background-color: #A7D1D2;
   padding: 15px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  z-index: 1000;
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0 10px;
   list-style: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
-  font-size: 16px;
-  font-weight: bold;
-  color: #f9f8f8;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-  margin: 0 15px;
+  position: relative; /* Key for submenu positioning */
+  margin: 0 20px;
 }
 
-.nav-item a {
+.nav-item{
+  .nav-link {
+    position: relative; /* Key for submenu positioning */
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px; /* Unified font size */
+    color: #015366; /* Unified color */
+    /* text-transform: uppercase; */
+    padding: 10px 20px; /* Unified padding */
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.nav-item a,
+.sub-item a { 
   text-decoration: none;
-  color: white;
-  font-size: 14px;
-  transition: color 0.3s ease;
+  font-size: 16px; /* Unified font size */
+  color: #015366; /* Unified color */
+  /* text-transform: uppercase; */
+  padding: 10px 20px; /* Unified padding */
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif; /* Explicit font-family */
 }
 
-.nav-item a:hover {
-  color: #f5a623;
-  cursor: pointer;
+
+.nav-item a:hover,
+.sub-item a:hover { /* Shared hover styles */
+  /* background-color: #f5a623;  */
+  color: #63898C; /* Change text color on hover */
 }
 
-.nav-item:active {
-  transform: scale(0.98);
-}
-
-/* Submenu styles */
+/* Submenu Styling */
 .sub-menu {
-  display: none;
+  display: none; /* Hidden by default */
   position: absolute;
-  background-color: #0d2741;
-  padding: 10px;
+  top: 100%; /* Position submenu directly below its parent */
+  left: 0;
+  background-color: #A7D1D2;
   list-style: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  width: 200px; /* Adjust submenu width as needed */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 999;
 }
 
-.sub-item{
-  padding-bottom: 15px;
+.sub-item a { /* Explicitly restyling submenu items */
+  font-size: 16px; /* Matches main menu */
+  color: #015366; /* Matches main menu */
+  padding: 10px 20px; /* Matches main menu */
+  display: block;
+  /* text-transform: uppercase; */
+  font-family: Arial, sans-serif; /* Matches main menu */
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.sub-menu.active {
+/* Show Submenu on Hover */
+.nav-item:hover .sub-menu {
   display: block;
 }
 
-.nav-link {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.nav-link::after {
-  content: " ▼";
-  font-size: 12px;
-  margin-left: 5px;
-  transition: transform 0.3s;
-}
-
-.nav-link:hover::after {
-  transform: rotate(180deg);
-}
-
-/* Mobile responsive styles */
+/* Responsive Styling */
 @media screen and (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .sub-menu {
-    position: relative;
-    padding-left: 20px;
-    display: none; /* Ensure submenu is hidden by default */
-  }
-
-  .sub-menu.active {
-    display: block;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  /* Submenu on mobile */
-  .sub-menu {
-    position: relative;
-    margin-top: 0;
-    padding-left: 20px;
-  }
-}
-
-
-/* Mobile responsive styles */
-@media screen and (max-width: 768px) {
-  .nav-container {
-    padding: 10px 0;
-  }
-
-  /* Hidden by default, slides in when 'active' class is added */
-  .nav-menu {
-    flex-direction: column;
+    align-items: flex-start;
     background-color: #0d2741;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
-    padding: 20px;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+    padding: 10px;
   }
 
   .nav-item {
     margin: 10px 0;
   }
 
-  .nav-item a {
-    font-size: 16px; /* Increase font size for mobile */
+  /* Submenu in Mobile */
+  .sub-menu {
+    position: relative; /* Align under the parent item naturally */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the submenu take the full width of its parent */
+    padding: 0;
+    box-shadow: none;
   }
 
-  /* Hamburger menu styles */
-  .menu-toggle {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 999;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-  }
-
-  .menu-toggle span {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: 0.3s ease;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  .sub-item a {
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .nav-item a {
-    font-size: 14px;
+/* Hamburger Menu */
+.menu-toggle {
+  display: none; /* Hidden on desktop */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #A7D1D2;
+  margin: 5px 0;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
-  .nav-container {
-    padding: 8px 0;
+  .nav-menu {
+    display: none; /* Hidden by default */
+  }
+
+  .nav-menu.active {
+    display: flex; /* Shown when active */
   }
 }

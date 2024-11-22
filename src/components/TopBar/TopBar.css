@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: #0d2741;
+  background-color: #A7D1D2;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
@@ -24,14 +24,14 @@
 .topbar-name h1 {
   font-size: 30px;
   font-weight: bold;
-  color: #f9f8f8;
+  color: #015366;
   margin: 0;
 }
 
 .topbar-name h3 {
   font-size: 18px;
   font-weight: normal;
-  color: #f9f8f8;
+  color: #015366;
   margin: 5px 0 0;
 }
 
@@ -42,18 +42,18 @@
 }
 
 .topbar-social-icons a {
-  color: #f9f8f8;
+  color: #015366;
   font-size: 22px;
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
 .topbar-social-icons a:hover {
-  color: #f5b042; /* Highlight color on hover */
+  color: #63898C; /* Highlight color on hover */
 }
 
 .contact-us {
-  background-color: #f5b042;
+  background-color: #63898C;
   color: #0d2741;
   border: none;
   padding: 10px 20px;
@@ -64,7 +64,7 @@
 }
 
 .contact-us:hover {
-  background-color: #d4a23a;
+  background-color: #015366;
   transform: scale(1.05);
 }
 

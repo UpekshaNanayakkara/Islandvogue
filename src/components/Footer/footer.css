@@ -2,8 +2,8 @@
 
 .Footer {
     padding-bottom: 2rem;
-    background-color: #0d2741;
-    color: #fff;
+    background-color: #A7D1D2;
+    color: #015366;
     width: 100%;
     margin: 0 auto;
 }
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     font-size:1.2rem;
-    color: white;
+    color: #015366	;
     /* line-height: 1.5; */
     margin-bottom: 10px;
     margin-left: 20px;
@@ -58,34 +58,34 @@
 }
 
 .footer-icons a {
-    color: #fff;
+    color: #015366;
     text-decoration: none;
 }
 
 .footer-icons svg {
     padding: 0.5rem;
-    background: #f5b042;
-    color: #895c3e;
+    background: #63898C;
+    color: #015366;
     border-radius: 50%;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .footer-icons svg:hover {
-    background: #fff;
-    color: #0d2741;
+    background: #A7D1D2;
+    color: #015366;
 }
 
 .column h5 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #f9f8f8;
+    color: #015366;
     padding-bottom: 10px;
     padding-left: 20px;
 }
 
 .column h5 u {
     text-decoration: none;
-    border-bottom: 2px solid #f5b042;
+    border-bottom: 2px solid #63898C;
     padding-top: 7px;
     display: inline-block;
 }
@@ -101,13 +101,13 @@
 
 .column ul li a {
     text-decoration: none;
-    color: #f9f8f8;
+    color: #015366;
     font-size: 1.2rem;
     padding-left: 10px;
 }
 
 .column ul li a:hover {
-    color: #f5b042;
+    color: #63898C;
 }
 
 
@@ -121,7 +121,7 @@
 }
 
 .column td {
-    color: #f9f8f8;
+    color: #015366;
     font-size: 1rem;
     vertical-align: middle;
     /* padding: 0.5rem; */
@@ -134,15 +134,15 @@
 .column td svg {
     font-size: 1.4rem;
     padding: 0.5rem;
-    background: #f5b042;
-    color: #895c3e;
+    background: #63898C;
+    color: #015366;
     border-radius: 50%;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .column td svg:hover {
-    background: #ff9933;
-    color: #fff;
+    background: #63898C;
+    color: #015366;
 }
 
 .Last-footer {
@@ -153,14 +153,14 @@
 .Last-footer p {
     font-size: 1rem;
     font-weight: 700;
-    color: #f9f8f8;
+    color: #015366;
     margin: 0;
 }
 
 .Last-footer hr {
     border: none;
     height: 2px;
-    background-color: #f9f8f8;
+    background-color: #015366;
     margin: 10px 0;
 }
 

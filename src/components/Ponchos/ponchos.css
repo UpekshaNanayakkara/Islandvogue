@@ -1,0 +1,161 @@
+/* Existing Styles */
+.ponchos-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+  
+  .ponchos-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #015366;
+  }
+  
+  .ponchos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated for mobile responsiveness */
+    gap: 20px; /* Reduced gap for better mobile display */
+  }
+  
+  .ponchos-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .ponchos-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .ponchos-img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    max-height: 400px; /* Restrict the max height */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .ponchos-info {
+    padding: 2px;
+    text-align: center;
+  }
+
+.ponchos-name,
+.ponchos-id,
+.ponchos-size,
+.ponchos-price {
+  margin: 4px 0; /* Adjusted margin to reduce spacing between text */
+}
+  
+  .ponchos-name {
+    font-size: 22px;
+    color: #015366;
+  }
+  
+  .ponchos-id, .angarkha-size, .angarkha-price {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .ponchos-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .ponchos-title {
+      font-size: 32px;
+    }
+  
+    .ponchos-grid {
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ponchos-container {
+      width: 90%;
+    }
+  
+    .ponchos-title {
+      font-size: 28px;
+    }
+  
+    .ponchos-img {
+      max-height: 350px; /* Smaller height for tablets */
+    }
+  
+    .ponchos-info {
+      padding: 8px;
+    }
+  
+    .ponchos-name {
+      font-size: 20px;
+    }
+  
+    .ponchos-price {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .ponchos-container {
+      width: 95%;
+    }
+  
+    .ponchos-title {
+      font-size: 24px;
+    }
+  
+    .ponchos-img {
+      max-height: 300px;
+    }
+  
+    .ponchos-name {
+      font-size: 18px;
+    }
+  
+    .ponchos-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .ponchos-title {
+      font-size: 22px;
+    }
+  
+    .ponchos-grid {
+      gap: 10px;
+    }
+  
+    .ponchos-card {
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .ponchos-img {
+      max-height: 250px;
+    }
+  
+    .ponchos-info {
+      padding: 5px;
+    }
+  
+    .ponchos-name {
+      font-size: 16px;
+    }
+  
+    .ponchos-price {
+      font-size: 14px;
+    }
+  }
+  

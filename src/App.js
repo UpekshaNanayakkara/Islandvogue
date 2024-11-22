@@ -10,7 +10,9 @@ import BannerSection from './components/BannerSection/BannerSection';
 import Footer from './components/Footer/footer';
 import PartyWear from './components/PartyWear/partyWear';
 import FrockStyle from './components/FrockStyle/frockStyle';
-import Angarkha from "./components/Angarkha/angarkha";
+import Angarkha from './components/Angarkha/angarkha';
+import Ponchos from './components/Ponchos/ponchos';
+import StaightCutTops from './components/StaightCutTops/straightCutTops';
 import Cardigans from './components/Cardigans/cardigans';
 import NewArrived from './components/NewArrived/newArrived';
 import NewArrivedSlider from './components/NewArrivedSlider/newArrivedSlider';
@@ -40,7 +42,9 @@ function App() {
           <Route path="/partywear" element={<PartyWear/>} />
           <Route path="/frockstyle" element={<FrockStyle />} />
           <Route path="/angarkha" element={<Angarkha />} />
+          <Route path= "/ponchos" element={<Ponchos />} />
           <Route path="/cardigan" element={<Cardigans />} />
+          <Route path="/staightcutTops" element={<StaightCutTops />} />
           <Route path="/newarrived" element={<NewArrived />} />
           <Route path="/aboutus" element = {<AboutUs />} />
           <Route path="/terms" element = {<TermsAndCondition />} />
