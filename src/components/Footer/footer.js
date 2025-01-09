@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTiktok, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import './footer.css'
-import logo from '../../assets/images/logo.jpeg';
+import logo from '../../assets/images/the10thhevan.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -17,8 +17,8 @@ const footer = () => {
                             </div>
                             <div >
                                 <p className="slag">
-                                Island Vogue - Ethnic & Modest wear sore..
-                                Slay it with Island Vogue !. 
+                                The 10th Hevan - Ethnic & Modest wear sore..
+                                Slay it with The 10th Hevan !. 
                                 </p>
                                 {/* <p>
                                     Reg No:
@@ -65,7 +65,7 @@ const footer = () => {
                                 </tr>
                                 <tr>
                                     <td><FaGlobe /></td>
-                                    <td>www.islandvoguesl.com</td>
+                                    <td>www.The 10th Hevanvoguesl.com</td>
                                 </tr>
                             </table>
                         </div>
@@ -74,7 +74,7 @@ const footer = () => {
                 <div className='Last-footer'>
                     <hr />
                     <div>
-                        <p>© All rights reserved by Island Vogue</p>
+                        <p>© All rights reserved by The 10th Hevan</p>
                     </div>
                 </div>
             </div>

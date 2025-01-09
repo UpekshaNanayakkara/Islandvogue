@@ -6,7 +6,7 @@ const exchangePolicy = () => {
         <div className="exchange-container">
           <div className="exchange-content">
             <h1>Exchange Policy</h1>
-            <h3>At Island Vogue, we want you to be completely satisfied with your purchase. If for any reason you are not happy with your order, we offer an easy and convenient exchange process.</h3>
+            <h3>At The 10th Hevane, we want you to be completely satisfied with your purchase. If for any reason you are not happy with your order, we offer an easy and convenient exchange process.</h3>
             
             <h4>Eligibility for Exchange:</h4>
             <p>Time Frame: Items must be exchanged within 7 days of the delivery date.</p>

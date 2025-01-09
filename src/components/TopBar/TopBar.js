@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopBar.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/Island Vogue Logo.png';
+import logo from '../../assets/images/the10thhevan.jpg';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from "react-icons/fa6";
 
@@ -14,7 +14,7 @@ const TopBar = () => {
         </Link>
       </div>
       <div className="topbar-name">
-        <h1>Island Vogue</h1>
+        <h1>THE 10th HEVAN</h1>
         <h3>Ethnic & Modest Wear Store</h3>
       </div>
       <div className="topbar-social-icons">

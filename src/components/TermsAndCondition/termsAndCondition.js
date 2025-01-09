@@ -6,7 +6,7 @@ const TermsAndCondition = () => {
     <div className="terms-container">
       <div className="terms-content">
         <h1>Terms and Conditions</h1>
-        <h3>Welcome to Island Vogue ("we," "us," or "our"). These Terms and Conditions ("Terms") govern your use of our website.</h3>
+        <h3>Welcome to The 10th Hevan ("we," "us," or "our"). These Terms and Conditions ("Terms") govern your use of our website.</h3>
         
         <h4>1. Acceptance of Terms</h4>
         <p>By accessing the Site, placing an order, or purchasing Products, you agree to be bound by these Terms.</p>
@@ -30,10 +30,10 @@ const TermsAndCondition = () => {
         <p>If you are not satisfied with your purchase, you may return the Products within 7 days of delivery for a refund.</p>
 
         <h4>8. Intellectual Property</h4>
-        <p>All content on the Site is the property of Island Vogue and is protected by copyright and intellectual property laws.</p>
+        <p>All content on the Site is the property of The 10th Hevan and is protected by copyright and intellectual property laws.</p>
 
         <h4>9. Limitation of Liability</h4>
-        <p>Island Vogue shall not be liable for any direct, indirect, incidental, or consequential damages resulting from your use of the Site.</p>
+        <p>The 10th Hevan shall not be liable for any direct, indirect, incidental, or consequential damages resulting from your use of the Site.</p>
 
         <h4>10. Privacy Policy</h4>
         <p>Please review our Privacy Policy to understand how we collect and protect your personal information.</p>
@@ -45,10 +45,10 @@ const TermsAndCondition = () => {
         <p>We reserve the right to update or modify these Terms at any time.</p>
 
         <h4>13. Contact Information</h4>
-        <p>If you have any questions about these Terms, contact us at Island Vogue.</p>
-        <p>Island Vogue</p>
+        <p>If you have any questions about these Terms, contact us at The 10th Hevan.</p>
+        <p>The 10th Hevan</p>
         <p>No.390/9, Chilaw Road, Negombo</p>
-        <p>islandvogue.sl </p>
+        <p>The 10th Hevan.sl </p>
         <p>+94727772459</p>
       </div>
     </div>

@@ -5,7 +5,7 @@ const deliveryPolicy = () => {
   return (
     <div className="exchange-container">
           <div className="exchange-content">
-            <h1>Delivery Policy for Island Vogue</h1>
+            <h1>Delivery Policy for The 10th Hevan</h1>
             
             <h4>1. Delivery Locations:</h4>
             <p>We deliver Island-wide & selected International locations. </p>
