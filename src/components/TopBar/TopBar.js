@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopBar.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/the10thhevan.jpg';
+import logo from '../../assets/images/logo white-03.jpg';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from "react-icons/fa6";
 
